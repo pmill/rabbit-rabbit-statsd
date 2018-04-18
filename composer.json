@@ -1,0 +1,21 @@
+{
+  "name": "pmill/rabbit-rabbit-statsd",
+  "description": "A StatsD integration for pmill/rabbit-rabbit",
+  "keywords": ["php", "rabbitmq", "rules", "management", "api", "statsd"],
+  "homepage": "https://github.com/pmill/rabbit-rabbit-statsd",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "pmill",
+      "email": "dev.pmill@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "pmill/rabbit-rabbit": "^0.1.0",
+    "league/statsd": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {"pmill\\RabbitRabbitStatsD\\": "src/"}
+  }
+}
