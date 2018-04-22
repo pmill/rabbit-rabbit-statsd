@@ -42,8 +42,8 @@ class StatsDRule extends AbstractRule
     public function run(int $readyMessageCount): void
     {
         $metric = $this->metric;
-        $metric = str_replace(':queueName', $this->queueName, $metric);
-        $metric = str_replace(':vhostName', $this->vHostName, $metric);
+        $metric = str_replace('{queueName}', $this->queueName, $metric);
+        $metric = str_replace('{vhostName}', $this->vHostName, $metric);
 
         $this->statsDClient->set($metric, $readyMessageCount);
     }

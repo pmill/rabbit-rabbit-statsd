@@ -64,6 +64,10 @@ $manager->run();
 
 # Version History
 
+0.1.1 (22/04/2018)
+
+*   Bugfix - Fixed metric name variable format
+
 0.1.0 (18/04/2018)
 
 *   First public release of rabbit-rabbit-statsd
