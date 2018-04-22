@@ -30,7 +30,7 @@ $manager->addRule(
         $vhostName,
         $queueName,
         $statsDClient,
-        'rabbitmq_{vhostName}_{queueName}'
+        'rabbitmq_:vhostName_:queueName'
     ),
     new GreaterThan(0)
 );
